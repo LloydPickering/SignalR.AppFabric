@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR.AppFabric", "SignalR.AppFabric\SignalR.AppFabric.csproj", "{83F7CB9F-34BF-4E2A-9A61-C6980D87361D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewId", "..\newid\src\NewId\NewId.csproj", "{660D8862-F851-4C9B-A8AB-62A7EEA65614}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{83F7CB9F-34BF-4E2A-9A61-C6980D87361D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83F7CB9F-34BF-4E2A-9A61-C6980D87361D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83F7CB9F-34BF-4E2A-9A61-C6980D87361D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{660D8862-F851-4C9B-A8AB-62A7EEA65614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{660D8862-F851-4C9B-A8AB-62A7EEA65614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{660D8862-F851-4C9B-A8AB-62A7EEA65614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{660D8862-F851-4C9B-A8AB-62A7EEA65614}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

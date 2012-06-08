@@ -1,0 +1,3 @@
+[submodule "newid"]
+	path = newid
+	url = https://github.com/davidfowl/NewId

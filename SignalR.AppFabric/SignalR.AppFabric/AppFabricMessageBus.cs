@@ -9,6 +9,9 @@
     using Microsoft.ApplicationServer.Caching;
     using ProtoBuf;
     using SignalR;
+    using NewId;
+    using NewId.Providers;
+    using SignalR.AppFabric.Providers;
 
     /// <summary>
     /// Message Bus for SignalR using AppFabric
@@ -81,22 +84,10 @@
             return value;
         }
 
-        private Int64 ticks = 0;
-        private Int32 sequence = 0;
-        private Int32 _threadID = Thread.CurrentThread.ManagedThreadId;
-        private String computername = Environment.MachineName;
+        NewIdGenerator idgen = new NewIdGenerator(new StopwatchTickProvider(), new WorkerIdProvider());
         public String GetNext()
         {
-            if (DateTime.Now.Ticks == ticks)
-            {
-                sequence++;
-            }
-            else
-            {
-                ticks = DateTime.Now.Ticks;
-                sequence = 0;
-            }
-            return ticks.ToString("00000000000000000000") + sequence.ToString("0000") + computername + _threadID;
+            return idgen.Next().ToString();
         }
         #endregion
 

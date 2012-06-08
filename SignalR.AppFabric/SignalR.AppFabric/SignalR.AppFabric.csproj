@@ -68,12 +68,20 @@
     <Compile Include="AppFabricMessageBus.cs" />
     <Compile Include="DependencyResolverExtensions.cs" />
     <Compile Include="IIDGeneratorException.cs" />
+    <Compile Include="Providers\WorkerIdProvider.cs" />
     <Compile Include="TaskAsyncHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\newid\src\NewId\NewId.csproj">
+      <Project>{660D8862-F851-4C9B-A8AB-62A7EEA65614}</Project>
+      <Name>NewId</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
